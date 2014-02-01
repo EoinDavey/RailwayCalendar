@@ -65,7 +65,7 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 	}
 	
 	private void setCurrentDate(){
-		final Calendar c = Calendar.getInstance();
+		final Calendar c = Calendar.getInstance(Locale.US);
 		
 		int year = c.get(Calendar.YEAR);
 		int month = c.get(Calendar.MONTH);
@@ -95,7 +95,7 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 	}
 	
 	private void createDateDialog(){
-		DialogFragment newFrag = new DatePickerFragment(this);
+		DialogFragment newFrag = new DatePickerFragment(this, mDateShow);
 		newFrag.show(mParent.getSupportFragmentManager(), "datePicker");
 	}
 	
@@ -154,7 +154,6 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 		int startDay = values.getAsInteger(DatabaseHandler.KEY_DAY);
 		int startYear = values.getAsInteger(DatabaseHandler.KEY_YEAR);
 		Log.v("calculateRealTime", new StringBuilder().append("Month: ").append(startMonth).append(" Day: ").append(startDay).toString());
-		
 		Calendar startCal = Calendar.getInstance(Locale.US);
 		startCal.clear();
 		startCal.set(Calendar.MONTH, startMonth - 1);
@@ -204,6 +203,7 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 	
 		Calendar cal = Calendar.getInstance(Locale.US);
 		cal.clear();
+		cal.setMinimalDaysInFirstWeek(1);
 		cal.set(Calendar.WEEK_OF_YEAR, realWeekOfYear);
 		cal.set(Calendar.DAY_OF_WEEK, givenDay);
 		cal.set(Calendar.YEAR, givenYear);

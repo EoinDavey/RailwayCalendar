@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
     
-    <string-array name="navArray">
+    <string-array name="navArray" translatable="false">
         <item>Date Calculator</item>
         <item>Railway Calendar</item>
     </string-array>
