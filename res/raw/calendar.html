@@ -3,282 +3,322 @@
 
 <head>
 <style type="text/css">
+
 #title{
 	font-size: 300%;
 }
 TD{
 	text-align:center;
 }
-tr{
-	border:1px solid black;
-}
+
 .periodweek{
 	color:blue;
-	font-weight:bold
+	font-weight:bold;
+	border:3pt;
+	border-color:black;
+	border-style:solid;
 }
 .weekno{
 	color:red;
 	font-weight:bold;
+	border:3pt;
+	border-color:black;
+	border-style:solid;
 }
-table{border:1px solid black;}
+.MainTable{
+	border-collapse: collapse;
+	border:1pt solid black;
+}
+.tableopener
+{
+	border-right:2pt solid black;
+
+}
+tr.borderbottom td{
+	border-top:1pt solid black;
+	border-bottom:2pt solid black;
+	border-right: 1pt solid black;
+}
+tr.year td{
+	border-top: 3pt solid black;
+	border-bottom: 3pt solid black;
+}
+
+.tablecloser{
+		border-right:2pt;
+		border-right-color:black;
+		border-right-style:solid;
+}
+
+.tableopener{
+	border-left: 2pt solid black;
+}
+
+tr.borders td{
+	border-top:1pt solid black;
+	border-bottom:1pt solid black;
+	border-right: 1pt solid black;
+}
+
 </style>
 </head>
 <body>
 
-<TABLE CELLSPACING=3 CELLPADDING=3> 
+<TABLE CELLSPACING=3 CELLPADDING=3 class="MainTable"> 
 <TR>
 <TD id="title" colspan="100%"><B>Railway Calendar</B></TD>
 </TR>
-<TR> 
-<TD ><b>2012</b></TD>
+<TR class="year"> 
+<TD class="tableopener"><b>2012</b></TD>
 <TD COLSPAN="6"><b>January</b></TD>
 <TD COLSPAN="6"><b>February</b></TD>
 <TD COLSPAN="7"><b>March</b></TD>
 <TD COLSPAN="6"><b>April</b></TD>
 <TD COLSPAN="6"><b>May</b></TD>
-<TD COLSPAN="7"><b>June</b></TD>
+<TD COLSPAN="7" class="tablecloser"><b>June</b></TD>
 </TR>
 <TR class="periodweek"> 
-<TD >Period/Week No</TD>
-<TD >10/4 </TD><TD >11/1 </TD><TD >11/2 </TD><TD >11/3 </TD><TD >11/4 </TD><TD ></TD><TD >11/4</TD><TD >12/1</TD><TD >12/2</TD><TD >12/3</TD><TD >12/4</TD><TD ></TD><TD >12/4</TD><TD >13/1</TD><TD >13/2</TD><TD >13/3</TD><TD >13/4</TD><TD >1/1</TD><TD ></TD><TD >1/1</TD><TD >1/2</TD><TD >1/3</TD><TD >1/4</TD><TD >2/1</TD><TD ></TD><TD >2/1</TD><TD >2/2</TD><TD >2/3</TD><TD >2/4</TD><TD >3/1</TD><TD ></TD><TD >3/1</TD><TD >3/2</TD><TD >3/3</TD><TD >3/4</TD><TD >4/1</TD><TD >4/2</TD>
+<TD class="periodweek">Period/Week No</TD>
+<TD >10/4 </TD><TD >11/1 </TD><TD >11/2 </TD><TD >11/3 </TD><TD >11/4 </TD><TD ></TD><TD >11/4</TD><TD >12/1</TD><TD >12/2</TD><TD >12/3</TD><TD >12/4</TD><TD ></TD><TD >12/4</TD><TD >13/1</TD><TD >13/2</TD><TD >13/3</TD><TD >13/4</TD><TD >1/1</TD><TD ></TD><TD >1/1</TD><TD >1/2</TD><TD >1/3</TD><TD >1/4</TD><TD >2/1</TD><TD ></TD><TD >2/1</TD><TD >2/2</TD><TD >2/3</TD><TD >2/4</TD><TD >3/1</TD><TD ></TD><TD >3/1</TD><TD >3/2</TD><TD >3/3</TD><TD >3/4</TD><TD >4/1</TD><TD class="tablecloser">4/2</TD>
 </TR>
 <TR  class="weekno">
-<TD>Week No
-</TD><TD >40</TD><TD >41</TD><TD >42</TD><TD >43</TD><TD >44</TD><TD ></TD><TD >44</TD><TD >45</TD><TD >46</TD><TD >47</TD><TD >48</TD><TD ></TD><TD >48</TD><TD >49</TD><TD >50</TD><TD >51</TD><TD >52</TD><TD >1</TD><TD ></TD><TD >1</TD><TD >2</TD><TD >3</TD><TD >4</TD><TD >5</TD><TD ></TD><TD >5</TD><TD >6</TD><TD >7</TD><TD >8</TD><TD >9</TD><TD ></TD><TD >9</TD><TD >10</TD><TD >11</TD><TD >12</TD><TD >13</TD><TD >14</TD>
+<TD class="weekno">Week No</TD>
+<TD >40</TD><TD >41</TD><TD >42</TD><TD >43</TD><TD >44</TD><TD ></TD><TD >44</TD><TD >45</TD><TD >46</TD><TD >47</TD><TD >48</TD><TD ></TD><TD >48</TD><TD >49</TD><TD >50</TD><TD >51</TD><TD >52</TD><TD >1</TD><TD ></TD><TD >1</TD><TD >2</TD><TD >3</TD><TD >4</TD><TD >5</TD><TD ></TD><TD >5</TD><TD >6</TD><TD >7</TD><TD >8</TD><TD >9</TD><TD ></TD><TD >9</TD><TD >10</TD><TD >11</TD><TD >12</TD><TD >13</TD><TD class="tablecloser">14</TD>
 </TR>
-<TR> 
-<TD>Saturday</TD>
-<TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
+<TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD class="tablecloser">30</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
-<TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
+<TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD class="tablecloser"></TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
-<TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
+<TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD class="tablecloser"></TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
-<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
+<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD class="tablecloser"></TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
-<TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
+<TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD class="tablecloser"></TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
-<TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
+<TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD class="tablecloser"></TD>
 </TR>
-<TR>
-<TD >Friday</TD>
-<TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
+<TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD class="tablecloser"></TD>
 <TR></TR>
 <TR></TR>
 <TD ></TD>
+<TR class="year">
+<TD></TD>
 <TD COLSPAN="6"><b>July</b></TD>
 <TD COLSPAN="6"><b>August</b></TD>
 <TD COLSPAN="6"><b>September</b></TD>
 <TD COLSPAN="6"><b>October</b></TD>
 <TD COLSPAN="6"><b>November</b></TD>
-<TD COLSPAN="6"><b>December</b></TD>
+<TD COLSPAN="5"class="tablecloser"><b>December</b></TD>
 </TR>
 <TR class="periodweek"> 
-<TD >Period/Week No</TD>
-<TD >4/2</TD><TD >4/3</TD><TD >4/4</TD><TD >5/1</TD><TD >5/2</TD><TD ></TD><TD >5/2</TD><TD >5/3</TD><TD >5/4</TD><TD >6/1</TD><TD >6/2</TD><TD ></TD><TD >6/3</TD><TD >6/4</TD><TD >7/1</TD><TD >7/2</TD><TD >7/3</TD><TD ></TD><TD >7/3</TD><TD >7/4</TD><TD >8/1</TD><TD >8/2</TD><TD >8/3</TD><TD ></TD><TD >8/3</TD><TD >8/4</TD><TD >9/1</TD><TD >9/2</TD><TD >9/3</TD><TD ></TD><TD >9/4</TD><TD >10/1</TD><TD >10/2</TD><TD >10/3</TD><TD >10/4</TD>
+<TD class="periodweek">Period/Week No</TD>
+<TD >4/2</TD><TD >4/3</TD><TD >4/4</TD><TD >5/1</TD><TD >5/2</TD><TD ></TD><TD >5/2</TD><TD >5/3</TD><TD >5/4</TD><TD >6/1</TD><TD >6/2</TD><TD ></TD><TD >6/3</TD><TD >6/4</TD><TD >7/1</TD><TD >7/2</TD><TD >7/3</TD><TD ></TD><TD >7/3</TD><TD >7/4</TD><TD >8/1</TD><TD >8/2</TD><TD >8/3</TD><TD ></TD><TD >8/3</TD><TD >8/4</TD><TD >9/1</TD><TD >9/2</TD><TD >9/3</TD><TD ></TD><TD >9/4</TD><TD >10/1</TD><TD >10/2</TD><TD >10/3</TD><TD class="tablecloser">10/4</TD>
 </TR>
 <TR class="weekno"> 
-<TD >Week No</TD>
-<TD >14</TD><TD >15</TD><TD >16</TD><TD >17</TD><TD >18</TD><TD ></TD><TD >18</TD><TD >19</TD><TD >20</TD><TD >21</TD><TD >22</TD><TD ></TD><TD >23</TD><TD >24</TD><TD >25</TD><TD >26</TD><TD >27</TD><TD ></TD><TD >27</TD><TD >28</TD><TD >29</TD><TD >30</TD><TD >31</TD><TD ></TD><TD >31</TD><TD >32</TD><TD >33</TD><TD >34</TD><TD >35</TD><TD ></TD><TD >36</TD><TD >37</TD><TD >38</TD><TD >39</TD><TD >40</TD>
+<TD class="weekno">Week No</TD>
+<TD >14</TD><TD >15</TD><TD >16</TD><TD >17</TD><TD >18</TD><TD ></TD><TD >18</TD><TD >19</TD><TD >20</TD><TD >21</TD><TD >22</TD><TD ></TD><TD >23</TD><TD >24</TD><TD >25</TD><TD >26</TD><TD >27</TD><TD ></TD><TD >27</TD><TD >28</TD><TD >29</TD><TD >30</TD><TD >31</TD><TD ></TD><TD >31</TD><TD >32</TD><TD >33</TD><TD >34</TD><TD >35</TD><TD ></TD><TD >36</TD><TD >37</TD><TD >38</TD><TD >39</TD><TD class="tablecloser">40</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD>
-<TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
+<TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
 <TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD>
 <TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
 <TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
 <TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
 <TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
 <TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD>
 </TR>
-<TR>
-<TD >Friday</TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
 <TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD>
-<TD ></TD>
 </TR>
-<TR>
-<TD ><b>2013</b></TD>
+<TR><TD></TD></TR>
+<TR><TD></TD></TR>
+<TR class="year">
+<TD class="year"><b>2013</b></TD>
 <TD COLSPAN="6"><b>January</b></TD>
 <TD COLSPAN="6"><b>February</b></TD>
 <TD COLSPAN="7"><b>March</b></TD>
 <TD COLSPAN="6"><b>April</b></TD>
 <TD COLSPAN="6"><b>May</b></TD>
-<TD COLSPAN="7"><b>June</b></TD>
+<TD COLSPAN="5" class="tablecloser"><b>June</b></TD>
 </TR>
 <TR class="periodweek">
-<TD >Period/Week No</TD>
-<TD >10/4 </TD><TD >11/1 </TD><TD >11/2 </TD><TD >11/3 </TD><TD >11/4 </TD><TD ></TD><TD >11/4</TD><TD >12/1</TD><TD >12/2</TD><TD >12/3</TD><TD >12/4</TD><TD ></TD><TD >12/4</TD><TD >13/1</TD><TD >13/2</TD><TD >13/3</TD><TD >13/4</TD><TD >1/1</TD><TD ></TD><TD >1/1</TD><TD >1/2</TD><TD >1/3</TD><TD >1/4</TD><TD >2/1</TD><TD ></TD><TD >2/1</TD><TD >2/2</TD><TD >2/3</TD><TD >2/4</TD><TD >3/1</TD><TD ></TD><TD >3/2</TD><TD >3/3</TD><TD >3/4</TD><TD >4/1</TD><TD >4/2</TD>
+<TD class="periodweek">Period/Week No</TD>
+<TD >10/4 </TD><TD >11/1 </TD><TD >11/2 </TD><TD >11/3 </TD><TD >11/4 </TD><TD ></TD><TD >11/4</TD><TD >12/1</TD><TD >12/2</TD><TD >12/3</TD><TD >12/4</TD><TD ></TD><TD >12/4</TD><TD >13/1</TD><TD >13/2</TD><TD >13/3</TD><TD >13/4</TD><TD >1/1</TD><TD ></TD><TD >1/1</TD><TD >1/2</TD><TD >1/3</TD><TD >1/4</TD><TD >2/1</TD><TD ></TD><TD >2/1</TD><TD >2/2</TD><TD >2/3</TD><TD >2/4</TD><TD >3/1</TD><TD ></TD><TD >3/2</TD><TD >3/3</TD><TD >3/4</TD><TD >4/1</TD><TD class="tablecloser">4/2</TD>
 </TR>
 <TR class="weekno">
-<TD >Week No</TD>
-<TD >40</TD><TD >41</TD><TD >42</TD><TD >43</TD><TD >44</TD><TD ></TD><TD >44</TD><TD >45</TD><TD >46</TD><TD >47</TD><TD >48</TD><TD ></TD><TD >48</TD><TD >49</TD><TD >50</TD><TD >51</TD><TD >52</TD><TD >1</TD><TD ></TD><TD >1</TD><TD >2</TD><TD >3</TD><TD >4</TD><TD >5</TD><TD ></TD><TD >5</TD><TD >6</TD><TD >7</TD><TD >8</TD><TD >9</TD><TD ></TD><TD >10</TD><TD >11</TD><TD >12</TD><TD >13</TD><TD >14</TD>
+<TD class="weekno">Week No</TD>
+<TD >40</TD><TD >41</TD><TD >42</TD><TD >43</TD><TD >44</TD><TD ></TD><TD >44</TD><TD >45</TD><TD >46</TD><TD >47</TD><TD >48</TD><TD ></TD><TD >48</TD><TD >49</TD><TD >50</TD><TD >51</TD><TD >52</TD><TD >1</TD><TD ></TD><TD >1</TD><TD >2</TD><TD >3</TD><TD >4</TD><TD >5</TD><TD ></TD><TD >5</TD><TD >6</TD><TD >7</TD><TD >8</TD><TD >9</TD><TD ></TD><TD >10</TD><TD >11</TD><TD >12</TD><TD >13</TD><TD class="tablecloser">14</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
 <TD ></TD><TD >6</TD><TD >13</TD><TD >19</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
-<TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
+<TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
 <TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD>
-<TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD>
+<TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
 <TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD>
-<TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD>
+<TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
-<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
+<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD>
 </TR>
-<TR>
-<TD >Friday</TD>
-<TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
+<TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD>
 </TR>
-<TR>
+<TR><TD></TD></TR>
+<TR class="year">
 <TD></TD>
 <TD COLSPAN="6"><b>July</b></TD>
 <TD COLSPAN="7"><b>August</b></TD>
 <TD COLSPAN="6"><b>September</b></TD>
 <TD COLSPAN="6"><b>October</b></TD>
 <TD COLSPAN="7"><b>November</b></TD>
-<TD COLSPAN="6"><b>December</b></TD>
+<TD COLSPAN="6" class="tablecloser"><b>December</b></TD>
 </TR>
 <TR class ="periodweek"> 
-<TD >Period/Week No</TD>
+<TD class="periodweek">Period/Week No</TD>
 <TD >4/2</TD><TD >4/3</TD><TD >4/4</TD><TD >5/1</TD><TD >5/2</TD><TD ></TD><TD >5/2</TD>
 <TD >5/3</TD><TD >5/4</TD><TD >6/1</TD><TD >6/2</TD><TD> 6/3</TD><TD ></TD><TD >6/3</TD><TD >6/4</TD><TD >7/1</TD><TD >7/2</TD><TD >7/3</TD><TD ></TD><TD >7/3</TD><TD >7/4</TD>
 <TD >8/1</TD><TD >8/2</TD><TD >8/3</TD><TD ></TD><TD >8/3</TD><TD >8/4</TD><TD >9/1</TD>
-<TD >9/2</TD><TD >9/3</TD><TD> 9/4</TD><TD ></TD><TD >9/4</TD><TD >10/1</TD><TD >10/2</TD><TD >10/3</TD><TD >10/4</TD>
+<TD >9/2</TD><TD >9/3</TD><TD> 9/4</TD><TD ></TD><TD >9/4</TD><TD >10/1</TD><TD >10/2</TD><TD >10/3</TD><TD class="tablecloser">10/4</TD>
 </TR>
 <TR class="weekno"> 
-<TD >Week No</TD>
-<TD >14</TD><TD >15</TD><TD >16</TD><TD >17</TD><TD >18</TD><TD ></TD><TD >18</TD><TD >19</TD><TD >20</TD><TD >21</TD><TD >22</TD><TD> 23</TD><TD ></TD><TD >23</TD><TD >24</TD><TD >25</TD><TD >26</TD><TD >27</TD><TD ></TD><TD >27</TD><TD >28</TD><TD >29</TD><TD >30</TD><TD >31</TD><TD ></TD><TD >31</TD><TD >32</TD><TD >33</TD><TD >34</TD><TD >35</TD><TD> 36</TD><TD ></TD><TD >36</TD><TD >37</TD><TD >38</TD><TD >39</TD><TD >40</TD>
+<TD class="weekno">Week No</TD>
+<TD >14</TD><TD >15</TD><TD >16</TD><TD >17</TD><TD >18</TD><TD ></TD><TD >18</TD><TD >19</TD><TD >20</TD><TD >21</TD><TD >22</TD><TD> 23</TD><TD ></TD><TD >23</TD><TD >24</TD><TD >25</TD><TD >26</TD><TD >27</TD><TD ></TD><TD >27</TD><TD >28</TD><TD >29</TD><TD >30</TD><TD >31</TD><TD ></TD><TD >31</TD><TD >32</TD><TD >33</TD><TD >34</TD><TD >35</TD><TD> 36</TD><TD ></TD><TD >36</TD><TD >37</TD><TD >38</TD><TD >39</TD><TD class="tablecloser">40</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD> 31</TD><TD ></TD><TD></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD> 30</TD>
 <TD ></TD><TD></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
 <TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
 <TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD> 30</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD>		<TD >18</TD><TD >25</TD><TD ></TD><TD></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
 <TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
-<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
+<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
-<TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
+<TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD>
 </TR>
-<TR>
-<TD >Friday</TD>
-<TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
+<TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD>
 </TR>
-<TD>
-<TD ></TD>
-</TR>
-<TD>
-<TD ></TD>
-</TR>
-<TR>
-<TD ><b>2014</b></TD>
+<TR><TD></TD></TR>
+<TR><TD></TD></TR>
+<TR class="year">
+<TD class="year"><b>2014</b></TD>
 <TD COLSPAN="6"><b>January</b></TD>
 <TD COLSPAN="5"><b>February</b></TD>
 <TD COLSPAN="6"><b>March</b></TD>
 <TD COLSPAN="6"><b>April</b></TD>
 <TD COLSPAN="7"><b>May</b></TD>
-<TD COLSPAN="6"><b>June</b></TD>
+<TD COLSPAN="5" class="tablecloser"><b>June</b></TD>
 </TR>
 <TR class ="periodweek"> 
-<TD >Period/Week No</TD>
-<TD >10/4</TD><TD >11/1</TD><TD >11/2</TD><TD >11/3</TD><TD >11/4</TD><TD ></TD><TD >12/1</TD><TD >12/2</TD><TD >12/3</TD><TD >12/4</TD><TD ></TD><TD >13/1</TD><TD >13/2</TD><TD >13/3</TD><TD >13/4</TD><TD >1/1</TD><TD ></TD><TD >1/1</TD><TD >1/2</TD><TD >1/3</TD><TD >1/4</TD><TD >2/1</TD><TD ></TD><TD >2/1</TD><TD >2/2</TD><TD >2/3</TD><TD >2/4</TD><TD >3/1</TD><TD> 3/2</TD><TD ></TD><TD >3/2</TD><TD >3/3</TD><TD >3/4</TD><TD >4/1</TD><TD >4/2</TD>
+<TD class="periodweek">Period/Week No</TD>
+<TD >10/4</TD><TD >11/1</TD><TD >11/2</TD><TD >11/3</TD><TD >11/4</TD><TD ></TD><TD >12/1</TD><TD >12/2</TD><TD >12/3</TD><TD >12/4</TD><TD ></TD><TD >13/1</TD><TD >13/2</TD><TD >13/3</TD><TD >13/4</TD><TD >1/1</TD><TD ></TD><TD >1/1</TD><TD >1/2</TD><TD >1/3</TD><TD >1/4</TD><TD >2/1</TD><TD ></TD><TD >2/1</TD><TD >2/2</TD><TD >2/3</TD><TD >2/4</TD><TD >3/1</TD><TD> 3/2</TD><TD ></TD><TD >3/2</TD><TD >3/3</TD><TD >3/4</TD><TD >4/1</TD><TD class="tablecloser">4/2</TD>
 </TR>
 <TR class="weekno">
-<TD >Week No</TD>
-<TD >40</TD><TD >41</TD><TD >42</TD><TD >43</TD><TD >44</TD><TD ></TD><TD >45</TD><TD >46</TD><TD >47</TD><TD >48</TD><TD ></TD><TD >49</TD><TD >50</TD><TD >51</TD><TD >52</TD><TD >1</TD><TD ></TD><TD >1</TD><TD >2</TD><TD >3</TD><TD >4</TD><TD >5</TD><TD ></TD><TD >5</TD><TD >6</TD><TD >7</TD><TD >8</TD><TD >9</TD><TD >10</TD><TD ></TD><TD >10</TD><TD >11</TD><TD >12</TD><TD >13</TD><TD >14</TD>
+<TD class="weekno">Week No</TD>
+<TD >40</TD><TD >41</TD><TD >42</TD><TD >43</TD><TD >44</TD><TD ></TD><TD >45</TD><TD >46</TD><TD >47</TD><TD >48</TD><TD ></TD><TD >49</TD><TD >50</TD><TD >51</TD><TD >52</TD><TD >1</TD><TD ></TD><TD >1</TD><TD >2</TD><TD >3</TD><TD >4</TD><TD >5</TD><TD ></TD><TD >5</TD><TD >6</TD><TD >7</TD><TD >8</TD><TD >9</TD><TD >10</TD><TD ></TD><TD >10</TD><TD >11</TD><TD >12</TD><TD >13</TD><TD class="tablecloser">14</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD> 31</TD><TD ></TD><TD></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD>
 </TR>
-<TR>
-<TD >Sunday</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
+<TR class="borders">
+<TD class="tableopener">Sunday</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
-<TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD> 31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD>		<TD >19</TD><TD >26</TD><TD ></TD><TD></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
+<TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD> 31</TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
-<TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
+<TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
-<TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
+<TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD ></TD><TD ></TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
-<TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD><TD ></TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
+<TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD><TD ></TD><TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD ></TD><TD ></TD><TD >1</TD><TD >8</TD><TD >15</TD><TD >22</TD><TD >29</TD><TD ></TD><TD ></TD><TD >5</TD><TD >12</TD><TD >19</TD><TD >26</TD>
 </TR>
-<TR>
-<TD >Friday</TD>
-<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD><TD ></TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
+<TD >3</TD><TD >10</TD><TD >17</TD><TD >24</TD><TD >31</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD >7</TD><TD >14</TD><TD >21</TD><TD >28</TD><TD ></TD><TD ></TD><TD >4</TD><TD >11</TD><TD >18</TD><TD >25</TD><TD ></TD><TD ></TD><TD >2</TD><TD >9</TD><TD >16</TD><TD >23</TD><TD >30</TD><TD ></TD><TD ></TD><TD >6</TD><TD >13</TD><TD >20</TD><TD >27</TD>
 </TR>
-<TR>
+<TR><TD></TD></TR>
+<TR class="year">
 <TD></TD>
 <TD COLSPAN="6"><b>July</b></TD>
 <TD COLSPAN="7"><b>August</b></TD>
 <TD COLSPAN="6"><b>September</b></TD>
 <TD COLSPAN="6"><b>October</b></TD>
 <TD COLSPAN="6"><b>November</b></TD>
-<TD COLSPAN="6"><b>December</b></TD>
+<TD COLSPAN="5" class="tablecloser"><b>December</b></TD>
 </TR>
 <TR class = "periodweek"> 
-<TD >Period/Week No</TD>
+<TD class="periodweek">Period/Week No</TD>
 <TD >4/2</TD>
 <TD >4/3</TD>
 <TD >4/4</TD>
@@ -314,10 +354,10 @@ table{border:1px solid black;}
 <TD >10/1</TD>
 <TD >10/2</TD>
 <TD >10/3</TD>
-<TD >10/4</TD>
+<TD class="tablecloser">10/4</TD>
 </TR>
 <TR class="weekno"> 
-<TD >Week No</TD>
+<TD class="weekno">Week No</TD>
 <TD >14</TD>
 <TD >15</TD>
 <TD >16</TD>
@@ -353,10 +393,10 @@ table{border:1px solid black;}
 <TD >37</TD>
 <TD >38</TD>
 <TD >39</TD>
-<TD >40</TD>
+<TD class="tablecloser">40</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD>
 <TD >5</TD>
 <TD >12</TD>
@@ -394,8 +434,8 @@ table{border:1px solid black;}
 <TD >20</TD>
 <TD >27</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
 <TD ></TD>
 <TD >6</TD>
 <TD >13</TD>
@@ -433,8 +473,8 @@ table{border:1px solid black;}
 <TD >21</TD>
 <TD >28</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
 <TD ></TD>
 <TD >7</TD>
 <TD >14</TD>
@@ -472,8 +512,8 @@ table{border:1px solid black;}
 <TD >22</TD>
 <TD >29</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
 <TD >1</TD>
 <TD >8</TD>
 <TD >15</TD>
@@ -511,8 +551,8 @@ table{border:1px solid black;}
 <TD >23</TD>
 <TD >30</TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
 <TD >2</TD>
 <TD >9</TD>
 <TD >16</TD>
@@ -550,8 +590,8 @@ table{border:1px solid black;}
 <TD >24</TD>
 <TD >31</TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
 <TD >3</TD>
 <TD >10</TD>
 <TD >17</TD>
@@ -587,10 +627,9 @@ table{border:1px solid black;}
 <TD >11</TD>
 <TD >18</TD>
 <TD >25</TD>
-<TD ></TD>
 </TR>
-<TR>
-<TD >Friday</TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
 <TD >4</TD>
 <TD >11</TD>
 <TD >18</TD>
@@ -626,25 +665,20 @@ table{border:1px solid black;}
 <TD >12</TD>
 <TD >19</TD>
 <TD >26</TD>
-<TD ></TD>
 </TR>
-<TD>
-<TD ></TD>
-</TR>
-<TD>
-<TD ></TD>
-</TR>
-<TR>
+<TR><TD></TD></TR>
+<TR><TD></TD></TR>
+<TR class="year">
 <TD ><b>2015</b></TD>
 <TD COLSPAN="7"><b>January</b></TD>
 <TD COLSPAN="6"><b>February</b></TD>
 <TD COLSPAN="6"><b>March</b></TD>
 <TD COLSPAN="6"><b>April</b></TD>
 <TD COLSPAN="7"><b>May</b></TD>
-<TD COLSPAN="5"><b>June</b></TD>
+<TD COLSPAN="5" class="tablecloser"><b>June</b></TD>
 </TR>
 <TR class = "periodweek"> 
-<TD >Period/Week No</TD>
+<TD class="periodweek">Period/Week No</TD>
 <TD >10/4</TD>
 <TD >11/1</TD>
 <TD >11/2</TD>
@@ -681,10 +715,10 @@ table{border:1px solid black;}
 <TD >3/3</TD>
 <TD >3/4</TD>
 <TD >4/1</TD>
-<TD >4/2</TD>
+<TD class="tablecloser">4/2</TD>
 </TR>
 <TR class="weekno">
-<TD >Week No</TD>
+<TD class="weekno">Week No</TD>
 <TD >40</TD>
 <TD >41</TD>
 <TD >42</TD>
@@ -721,10 +755,10 @@ table{border:1px solid black;}
 <TD >11</TD>
 <TD >12</TD>
 <TD >13</TD>
-<TD >14</TD>
+<TD class="tablecloser">14</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD>
 <TD >3</TD>
 <TD >10</TD>
@@ -763,8 +797,8 @@ table{border:1px solid black;}
 <TD >20</TD>
 <TD >27</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
 <TD ></TD>
 <TD >4</TD>
 <TD >11</TD>
@@ -803,8 +837,8 @@ table{border:1px solid black;}
 <TD >21</TD>
 <TD >28</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
 <TD ></TD>
 <TD >5</TD>
 <TD >12</TD>
@@ -843,8 +877,8 @@ table{border:1px solid black;}
 <TD >22</TD>
 <TD >29</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
 <TD ></TD>
 <TD >6</TD>
 <TD >13</TD>
@@ -882,10 +916,9 @@ table{border:1px solid black;}
 <TD >16</TD>
 <TD >23</TD>
 <TD >30</TD>
-<TD ></TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
 <TD ></TD>
 <TD >7</TD>
 <TD >14</TD>
@@ -922,10 +955,9 @@ table{border:1px solid black;}
 <TD >10</TD>
 <TD >17</TD>
 <TD >24</TD>
-<TD ></TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
 <TD >1</TD>
 <TD >8</TD>
 <TD >15</TD>
@@ -962,10 +994,9 @@ table{border:1px solid black;}
 <TD >11</TD>
 <TD >18</TD>
 <TD >25</TD>
-<TD ></TD>
 </TR>
-<TR>
-<TD >Friday</TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
 <TD >2</TD>
 <TD >9</TD>
 <TD >16</TD>
@@ -1002,20 +1033,19 @@ table{border:1px solid black;}
 <TD >12</TD>
 <TD >19</TD>
 <TD >26</TD>
-<TD ></TD>
 </TR>
-<TR>
-<TR>
+<TR><TD></TD></TR>
+<TR class="year">
 <TD></TD>
 <TD COLSPAN="6"><b>July</b></TD>
 <TD COLSPAN="6"><b>August</b></TD>
 <TD COLSPAN="6"><b>September</b></TD>
 <TD COLSPAN="7"><b>October</b></TD>
 <TD COLSPAN="6"><b>November</b></TD>
-<TD COLSPAN="6"><b>December</b></TD>
+<TD COLSPAN="5" class="tablecloser"><b>December</b></TD>
 </TR>
 <TR class="periodweek"> 
-<TD >Period/Week No</TD>
+<TD class="periodweek">Period/Week No</TD>
 <TD >4/2</TD>
 <TD >4/3</TD>
 <TD >4/4</TD>
@@ -1051,10 +1081,10 @@ table{border:1px solid black;}
 <TD >10/1</TD>
 <TD >10/2</TD>
 <TD >10/3</TD>
-<TD >10/4</TD>
+<TD class="tablecloser">10/4</TD>
 </TR>
 <TR class="weekno"> 
-<TD >Week No</TD>
+<TD class="weekno">Week No</TD>
 <TD >14</TD>
 <TD >15</TD>
 <TD >16</TD>
@@ -1090,10 +1120,10 @@ table{border:1px solid black;}
 <TD >37</TD>
 <TD >38</TD>
 <TD >39</TD>
-<TD >40</TD>
+<TD class="tablecloser">40</TD>
 </TR>
-<TR> 
-<TD >Saturday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Saturday</TD>
 <TD ></TD>
 <TD >4</TD>
 <TD >11</TD>
@@ -1131,8 +1161,8 @@ table{border:1px solid black;}
 <TD >19</TD>
 <TD >26</TD>
 </TR>
-<TR> 
-<TD >Sunday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Sunday</TD>
 <TD ></TD>
 <TD >5</TD>
 <TD >12</TD>
@@ -1170,8 +1200,8 @@ table{border:1px solid black;}
 <TD >21</TD>
 <TD >28</TD>
 </TR>
-<TR> 
-<TD >Monday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Monday</TD>
 <TD ></TD>
 <TD >6</TD>
 <TD >13</TD>
@@ -1209,8 +1239,8 @@ table{border:1px solid black;}
 <TD >21</TD>
 <TD >28</TD>
 </TR>
-<TR> 
-<TD >Tuesday</TD>
+<TR class="borders"> 
+<TD class="tableopener">Tuesday</TD>
 <TD ></TD>
 <TD >7</TD>
 <TD >14</TD>
@@ -1248,8 +1278,8 @@ table{border:1px solid black;}
 <TD >22</TD>
 <TD >29</TD>
 </TR>
-<TR>
-<TD >Wednesday</TD>
+<TR class="borders">
+<TD class="tableopener">Wednesday</TD>
 <TD >1</TD>
 <TD >8</TD>
 <TD >15</TD>
@@ -1287,8 +1317,8 @@ table{border:1px solid black;}
 <TD >23</TD>
 <TD >30</TD>
 </TR>
-<TR>
-<TD >Thursday</TD>
+<TR class="borders">
+<TD class="tableopener">Thursday</TD>
 <TD >2</TD>
 <TD >9</TD>
 <TD >16</TD>
@@ -1326,8 +1356,8 @@ table{border:1px solid black;}
 <TD >24</TD>
 <TD >31</TD>
 </TR>
-<TR>
-<TD >Friday</TD>
+<TR class="borderbottom">
+<TD class="tableopener">Friday</TD>
 <TD >3</TD>
 <TD >10</TD>
 <TD >17</TD>
@@ -1364,7 +1394,6 @@ table{border:1px solid black;}
 <TD >11</TD>
 <TD >18</TD>
 <TD >25</TD>
-<TD ></TD>
 </TR>
 </TABLE>
 </body>
