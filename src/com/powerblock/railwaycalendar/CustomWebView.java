@@ -2,7 +2,6 @@ package com.powerblock.railwaycalendar;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.webkit.WebView;
 
 public class CustomWebView extends WebView {
@@ -26,20 +25,5 @@ public class CustomWebView extends WebView {
 		getSettings().setBuiltInZoomControls(true);
 		getSettings().setSupportZoom(true);
 	}
-	
-	/*@Override
-	public boolean onTouchEvent(MotionEvent ev){
-		if(ev.getAction() == MotionEvent.ACTION_DOWN ||
-	            ev.getAction() == MotionEvent.ACTION_POINTER_DOWN){
-			if(ev.getPointerCount() > 1){
-				getSettings().setBuiltInZoomControls(true);
-				getSettings().setSupportZoom(true);
-			} else {
-				getSettings().setBuiltInZoomControls(false);
-				getSettings().setSupportZoom(false);
-			}
-		}
-		return super.onTouchEvent(ev);
-	}*/
 
 }

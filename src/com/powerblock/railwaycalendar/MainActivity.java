@@ -14,7 +14,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 @SuppressLint("SimpleDateFormat")
@@ -25,7 +24,6 @@ public class MainActivity extends ActionBarActivity{
 	private ActionBarDrawerToggle mDrawerToggle;
 	private ListView mDrawerList;
 	private CharSequence mTitle;
-	private CharSequence mDrawerTitle;
 
 	private FragmentManager mFragManager;
 	
@@ -43,7 +41,7 @@ public class MainActivity extends ActionBarActivity{
 		
 		mTitles = getResources().getStringArray(R.array.navArray);
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
-		mTitle = mDrawerTitle = getTitle();
+		mTitle = getTitle();
 		
 		mDrawerList.setAdapter(new CustomListAdapter(this, R.layout.drawer_list_item, mTitles));
 		
