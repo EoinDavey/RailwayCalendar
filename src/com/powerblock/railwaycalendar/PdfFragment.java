@@ -17,6 +17,7 @@ public class PdfFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		super.onCreateView(inflater, container, savedInstanceState);
+		super.setRetainInstance(false);
 		return inflater.inflate(R.layout.pdf_webview_layout, container, false);
 	}
 	

@@ -49,6 +49,9 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 				} else if(p.equals("Date Calculator")){
 					Drawable drawable = mActivity.getResources().getDrawable(android.R.drawable.ic_menu_month);
 					drawerTextView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
+				} else if(p.equals("Split")){
+					Drawable drawable = mActivity.getResources().getDrawable(R.drawable.icon_split);
+					drawerTextView.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null);
 				}
 				drawerTextView.setText(p);
 			}

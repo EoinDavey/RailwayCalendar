@@ -1,5 +1,7 @@
 package com.powerblock.railwaycalendar;
 
+import java.util.ArrayList;
+
 import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -10,11 +12,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 @SuppressLint("SimpleDateFormat")
 public class MainActivity extends ActionBarActivity{
@@ -24,11 +28,16 @@ public class MainActivity extends ActionBarActivity{
 	private ActionBarDrawerToggle mDrawerToggle;
 	private ListView mDrawerList;
 	private CharSequence mTitle;
+	private ArrayList<Fragment> mFragArray = new ArrayList<Fragment>();
 
 	private FragmentManager mFragManager;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		if(savedInstanceState != null){
+			savedInstanceState.clear();
+		}
+		
 		super.onCreate(savedInstanceState);
 		final ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayShowCustomEnabled(true);
@@ -36,6 +45,7 @@ public class MainActivity extends ActionBarActivity{
 		setContentView(R.layout.activity_main);
 		
 		mFragManager = getSupportFragmentManager();
+		
 
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		
@@ -75,6 +85,7 @@ public class MainActivity extends ActionBarActivity{
 		mDrawerToggle.syncState();
 	}
 	
+	
 	@Override
 	public void onConfigurationChanged(Configuration newConfig){
 		super.onConfigurationChanged(newConfig);
@@ -104,27 +115,49 @@ public class MainActivity extends ActionBarActivity{
 	private void addFragment(){
 		CalculatorFragment calcFrag = new CalculatorFragment();
 		FragmentTransaction fragTransact = mFragManager.beginTransaction();
-		fragTransact.add(R.id.fragment_parent, calcFrag);
+		fragTransact.replace(R.id.fragment_parent, calcFrag);
 		fragTransact.commit();
+		mFragArray.add(calcFrag);
 	}
 	
-	public void selectFrag(int position){
+	public void selectFrag(String text, int position){
 		FragmentTransaction fragTransact = mFragManager.beginTransaction();
+		
 		Fragment frag = null;
+		boolean split = false;
 		CharSequence title = "";
-		switch(position){
-			case 0:
-				frag = new CalculatorFragment();
-				title = "Calculator";
-				break;
-			case 1:
-				frag = new PdfFragment();
-				title = "Calendar";
-				break;
-			default:
-				break;
+		Log.v("text",text);
+		if(text.equals("Date Calculator")){
+			Log.v("Switch replace", "calculator");
+			frag = new CalculatorFragment();
+			title = "Calculator";
+		} else if(text.equals("Railway Calendar")){
+			Log.v("Switch replace", "pdffragment");
+			frag = new PdfFragment();
+			title = "Calendar";
+		} else if(text.equals("Split")){
+			split = true;
+			title = "Calculator/Calendar";
 		}
-		fragTransact.replace(R.id.fragment_parent, frag).commit();
+		
+		Log.v("split", String.valueOf(split));
+		for(int i = 0; i < mFragArray.size(); i++){
+			fragTransact.remove(mFragArray.get(i));
+			Log.v("FragArray", "removed");
+			
+		}
+		mFragArray.clear();
+		if(split == false){	
+			fragTransact.replace(R.id.fragment_parent, frag).commit();
+			mFragArray.add(frag);
+		} else {
+			frag = new CalculatorFragment();
+			fragTransact.replace(R.id.fragment_parent, frag).commit();
+			mFragArray.add(frag);
+			frag = new PdfFragment();
+			mFragManager.beginTransaction().add(R.id.fragment_parent, frag).commit();
+			mFragArray.add(frag);
+		}
 		
 		mDrawerList.setItemChecked(position, true);
 		setTitle(title);
@@ -143,8 +176,9 @@ public class MainActivity extends ActionBarActivity{
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
-			selectFrag(position);
-			
+			TextView tView = (TextView) view;
+			Log.v("frag", tView.getText().toString());
+			selectFrag(tView.getText().toString(), position);
 		}
 		
 	}

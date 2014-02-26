@@ -40,6 +40,7 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 	@Override 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 		super.onCreateView(inflater, container, savedInstanceState);
+		super.setRetainInstance(false);
 		View layout =  inflater.inflate(R.layout.calculator_test_layout, container, false);
 		bChangeDate = (ImageButton) layout.findViewById(R.id.editButton1);
 		bTrainDate = (ImageButton) layout.findViewById(R.id.editButton2);
@@ -73,7 +74,6 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 		
 		mDateShow.setText(new StringBuilder().append(day).append("-").append(month+1).append("-").append(year).toString());
 		calculateTrainTime(year, month, day);
-		//mArrowsView.setImageResource(R.drawable.arrows_off);
 		
 	}
 	
@@ -128,8 +128,7 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 					Toast.makeText(mParent, "Please make sure you have filled in all the boxes", Toast.LENGTH_LONG).show();
 				}
 			}
-			
-		}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+			}).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
