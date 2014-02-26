@@ -13,6 +13,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -110,6 +111,19 @@ public class MainActivity extends ActionBarActivity{
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		return false;
+	}
+	
+	@Override
+	public boolean onKeyDown(int keycode, KeyEvent e){
+		if(keycode == KeyEvent.KEYCODE_MENU){
+			 if (!mDrawerLayout.isDrawerOpen(mDrawerList)) {
+				 mDrawerLayout.openDrawer(mDrawerList);
+		     } else if(mDrawerLayout.isDrawerOpen(mDrawerList)){
+		    	 mDrawerLayout.closeDrawer(mDrawerList);
+		     }
+			 return true;
+		}
+		return super.onKeyDown(keycode, e);
 	}
 	
 	private void addFragment(){
