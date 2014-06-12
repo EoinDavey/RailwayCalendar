@@ -279,6 +279,8 @@ public class CalculatorFragment extends Fragment implements DatePickerFragment.p
 		
 		if(cal.compareTo(startCal) == -1){
 			weekOfYear += 52;
+		} else if (trainWeekOfYear < startWeekOfYear){
+			weekOfYear += 52;
 		}
 		
 		String period = calculatePeriodAndWeek(weekOfYear);

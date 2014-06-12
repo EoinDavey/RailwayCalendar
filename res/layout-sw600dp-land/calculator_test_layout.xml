@@ -4,22 +4,28 @@
     android:layout_height="0px"
     android:background="#2EA3C7"
     android:layout_weight="1" >
+    
     <TextView
-        android:id="@+id/CalculatorTitle"
-        android:layout_width="match_parent"
+    android:id="@+id/CalculatorTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/calculator_frag"
+    android:background="@drawable/title_separator"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <RelativeLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/calculator_frag"
-        android:background="@drawable/title_separator"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:background="#0000"
+        android:layout_centerInParent="true" >
+
     <LinearLayout
         android:id="@+id/linearlayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/CalculatorTitle"
         android:layout_marginTop="30dp"
         android:layout_centerInParent="true" >
         <LinearLayout
@@ -109,4 +115,5 @@
 		    </LinearLayout>
 	    </LinearLayout>
 	</LinearLayout>
+	</RelativeLayout>
 </RelativeLayout>
